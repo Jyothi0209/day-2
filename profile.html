@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="login-title">Profile</h2>
+    
+        <form class="login-form">
+          <div>
+            <label for="name">location </label>
+            <input
+                   id="name"
+                   type="text"
+                   placeholder="Your location"
+                   name="name"
+                   required
+                   />
+          </div>
+    
+          <div>
+            <label for="home">Cleaning Requirments</label>
+            <select class="home" name="Type">
+              <option value="s">Standard</option>
+              <option value="d">Deep</option>
+              <option value="MIMO">Move-in/Move-out</option>
+              <option value="Cus">Customized</option>
+              <option value="gc">Green Cleaning</option>
+            </select>
+          </div>
+          <div>
+            <label for="home">scheduling preferences</label>
+            <select class="home" name="Type">
+              <option value="s">one-time</option>
+              <option value="d">recurring</option>
+              
+            </select>
+          </div>
+          <form >
+            <label for="time">Time (date and time):</label>
+            <input type="datetime-local" id="time" name="time">
+            
+          </form>
+          <br>
+          
+    
+          <button class="btn btn--form" type="submit" value="Log in">
+            Create
+          </button>
+        </form>
+    </div>
+</body>
+</html>
